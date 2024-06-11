@@ -1,3 +1,3 @@
 FROM php:8.3-apache
 
-COPY /html/index.html /usr/local/apache2/htdocs/
+COPY /html/index.html /var/wwww/html/
