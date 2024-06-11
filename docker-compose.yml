@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  nginx:
-    image: nginx:latest
+  apache:
+    image: httpd:latest
     ports:
       - "8081:80"
     volumes:
-      - ./html:/usr/share/nginx/html
+      - ./html:/usr/local/apache2/htdocs/
