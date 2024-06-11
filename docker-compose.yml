@@ -9,4 +9,4 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - ./html:/usr/local/apache2/htdocs/
+      - ./html:/var/www/html/
