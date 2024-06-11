@@ -1,5 +1,6 @@
-FROM php:8.3-apache
+FROM httpd:2.4
 
-COPY ./index.html /var/www/html
+COPY ./index.html /usr/local/apache2/htdocs/
+COPY ./style.css /usr/local/apache2/htdocs/
 
-WORKDIR /var/www/html
+WORKDIR /var/www/
