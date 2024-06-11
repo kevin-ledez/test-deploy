@@ -2,7 +2,10 @@ version: '3.8'
 
 services:
   apache:
-    image: httpd:latest
+    container_name: apache
+    build:
+      context: ./docker/dev/api/
+      dockerfile: ./Dockerfile
     ports:
       - "8081:80"
     volumes:
