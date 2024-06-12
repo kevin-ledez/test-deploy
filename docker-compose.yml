@@ -10,6 +10,7 @@ services:
       - "8081:80"
     volumes:
       - /:/var/www
+    pull_policy: always
   nginx:
     image: jc21/nginx-proxy-manager:latest
     container_name: nginx-proxy-manager
@@ -23,5 +24,4 @@ services:
     volumes:
       - /home/nginx-proxy-manager/data:/config:rw
       - /letsencrypt:/etc/letsencrypt
-x-bt_build:
-  policy: "always"
+    pull_policy: always
