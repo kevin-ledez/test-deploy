@@ -15,4 +15,3 @@ jobs:
           url: '${{ secrets.PORTAINER_WEBHOOK_URL_PREPROD }}'
           method: 'POST'
           preventFailureOnNoResponse: true
-          ignoreSsl: true
