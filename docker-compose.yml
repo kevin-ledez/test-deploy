@@ -24,4 +24,4 @@ services:
     volumes:
       - /home/nginx-proxy-manager/data:/config:rw
       - /letsencrypt:/etc/letsencrypt
-    pull_policy: always
+    pull_policy: build
