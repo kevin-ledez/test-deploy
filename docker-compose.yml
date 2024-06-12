@@ -23,3 +23,5 @@ services:
     volumes:
       - /home/nginx-proxy-manager/data:/config:rw
       - /letsencrypt:/etc/letsencrypt
+x-bt_build:
+  policy: "always"
