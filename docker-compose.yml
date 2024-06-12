@@ -10,7 +10,7 @@ services:
       - "8081:80"
     volumes:
       - /:/var/www
-    pull_policy: always
+    pull_policy: build
   nginx:
     image: jc21/nginx-proxy-manager:latest
     container_name: nginx-proxy-manager
